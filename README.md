@@ -12,9 +12,34 @@ The purpose of this analysis was to evaluate the performance of machine learning
 * Challenge Code: [credit_risk_resampling.ipynb](https://github.com/daniel-sh-au/UofT_DataBC_Module17_Credit_Risk_Analysis/blob/main/credit_risk_resampling.ipynb), [credit_risk_ensemble.ipynb](https://github.com/daniel-sh-au/UofT_DataBC_Module17_Credit_Risk_Analysis/blob/main/credit_risk_ensemble.ipynb)
 
 ## Results
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. Use screenshots of your outputs to support your results.
+The balanced accuracy scores and classification reports for each machine learning model are shown below:
 
+### Naive Random Oversampling
+Balanced Accuracy Score: 0.6573
+![classification_report_random_oversample.png](https://github.com/daniel-sh-au/UofT_DataBC_Module17_Credit_Risk_Analysis/blob/main/Resources/classification_report_random_oversample.png)
 
+### SMOTE Oversampling
+Balanced Accuracy Score: 0.6259
+![classification_report_SMOTE_oversample.png](https://github.com/daniel-sh-au/UofT_DataBC_Module17_Credit_Risk_Analysis/blob/main/Resources/classification_report_SMOTE_oversample.png)
+
+### Cluster Centroids Undersampling
+Balanced Accuracy Score: 0.5318
+![classification_report_ClusterCentroids_undersample.png](https://github.com/daniel-sh-au/UofT_DataBC_Module17_Credit_Risk_Analysis/blob/main/Resources/classification_report_ClusterCentroids_undersample.png)
+
+### SMOTEENN Combination Sampling
+Balanced Accuracy Score: 0.6585
+![classification_report_SMOTEENN_combined.png](https://github.com/daniel-sh-au/UofT_DataBC_Module17_Credit_Risk_Analysis/blob/main/Resources/classification_report_SMOTEENN_combined.png)
+
+### Balanced Random Forest Classifier
+Balanced Accuracy Score: 0.7885
+![classification_report_BalancedRandomForestClassifier.png](https://github.com/daniel-sh-au/UofT_DataBC_Module17_Credit_Risk_Analysis/blob/main/Resources/classification_report_BalancedRandomForestClassifier.png)
+
+### Easy Ensemble AdaBoost Classifier
+Balanced Accuracy Score: 0.9317
+![classification_report_EasyEnsembleClassifier.png](https://github.com/daniel-sh-au/UofT_DataBC_Module17_Credit_Risk_Analysis/blob/main/Resources/classification_report_EasyEnsembleClassifier.png)
+
+### Analysis
+* The EasyEnsembleClassifier algorithm had the highest accuracy score (0.9317) and the Cluster Centroids undersampling algorithm had the lowest accuracy score (0.5318).
 
 ## Summary
 Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
