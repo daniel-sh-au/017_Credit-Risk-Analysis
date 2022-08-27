@@ -60,7 +60,7 @@ higher than the precision of the four previous models.
 
 #### Recall
 * The recall for each machine learning model are shown below in descending order by low risk recall: 
-| Rank | Machine Learning Model | Recall - Low Risk | Recall - High Risk |
+| Rank | Machine Learning Model | Recall: Low Risk | Recall: High Risk |
 | ---- | ---------------------- | ----------------- | ------------------ |
 |1. | Easy Ensemble AdaBoost Classifier | 0.94 | 0.92 |
 |2. | Balanced Random Forest Classifier |0.87 | 0.70 |
