@@ -3,7 +3,7 @@
 ## Overview of the Analysis
 
 ### Purpose
-The purpose of this analysis was to evaluate the performance of machine learning models for predicting credit risk. The data was oversampled using the **RandomOverSampler** and **SMOTE**, as well as undersampled using the **ClusterCentroids** algorithms. Then, a combination approach of over- and under-sampling using the **SMOTEENN** algorithm was applied to the dataset. A **LogisticRegression** classifier was then applied for each of the previous sampling algorithms. Finally, two machine learning models, **BalancedRandomForestClassifier** and **EasyEnsembleClassifier** were applied to predict credit risk. 
+The purpose of this analysis was to evaluate the performance of machine learning models for predicting credit risk. The data was oversampled using the **RandomOverSampler** and **SMOTE**, as well as undersampled using the **ClusterCentroids** algorithms. Then, a combination approach of over- and under-sampling using the **SMOTEENN** algorithm was applied to the dataset. A LogisticRegression classifier was then applied for each of the previous sampling algorithms. Finally, two machine learning models, **BalancedRandomForestClassifier** and **EasyEnsembleClassifier** were applied to predict credit risk. 
 
 ### Resources
 * Jupyter Notebook, Python 3.7.13
@@ -61,6 +61,7 @@ higher than the precision of the four previous models.
 #### Recall
 * The recall for each machine learning model are shown below in descending order by low risk recall: 
 | Rank | Machine Learning Model | Recall - Low Risk | Recall - High Risk |
+| ---- | ---------------------- | ----------------- | ------------------ |
 |1. | Easy Ensemble AdaBoost Classifier | 0.94 | 0.92 |
 |2. | Balanced Random Forest Classifier |0.87 | 0.70 |
 |3. | SMOTE Oversampling |0.68 | 0.57 |
