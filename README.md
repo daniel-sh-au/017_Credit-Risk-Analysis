@@ -59,7 +59,8 @@ higher than the precision of the four previous models.
 * The precision for low risk was 1.00 for all six machine learning models, which indicates an extremely high reliability for low risk classification. 
 
 #### Recall
-* The recall for each machine learning model are shown below in descending order by low risk recall: 
+* The recall for each machine learning model are shown below in descending order by low risk recall:
+
 | Rank | Machine Learning Model | Recall: Low Risk | Recall: High Risk |
 | ---- | ---------------------- | ----------------- | ------------------ |
 |1. | Easy Ensemble AdaBoost Classifier | 0.94 | 0.92 |
@@ -68,6 +69,9 @@ higher than the precision of the four previous models.
 |4. | Naive Random Oversampling | 0.60 | 0.71 |
 |5. | SMOTEENN Combination Sampling | 0.54 | 0.77 |
 |6. | Cluster Centroids Undersampling | 0.39 | 0.67 |
+
+* For low risk, the Easy Ensemble AdaBoost Classifier had the highest recall and the Cluster Centroids Undersampling algorithm had the lowest recall.
+* For high risk, the Easy Ensemble AdaBoost Classifier had the highest recall and the SMOTE Oversampling algorithm had the lowest recall. 
 
 ## Summary
 Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
