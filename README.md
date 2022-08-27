@@ -43,17 +43,17 @@ Balanced Accuracy Score: 0.9317
 * Recall = TP/(TP + FN)
 
 #### Balanced Accuracy Score
-* The balanced accuracy scores are listed below in descending order:
-  1. Easy Ensemble AdaBoost Classifier (0.9317)
-  2. Balanced Random Forest Classifier (0.7885)
-  3. SMOTEENN Combination Sampling (0.6585)
-  4. Naive Random Oversampling (0.6573)
-  5. SMOTE Oversampling (0.6259)
-  6. Cluster Centroids Undersampling (0.5318)
+* The balanced accuracy scores are listed below in descending order:  
+1. Easy Ensemble AdaBoost Classifier (0.9317)
+2. Balanced Random Forest Classifier (0.7885)
+3. SMOTEENN Combination Sampling (0.6585)
+4. Naive Random Oversampling (0.6573)
+5. SMOTE Oversampling (0.6259)
+6. Cluster Centroids Undersampling (0.5318)
 * The Easy Ensemble AdaBoost Classifier had the highest accuracy score and the Cluster Centroids Undersampling algorithm had the lowest accuracy score.
 
 #### Precision
-* The precision for each machine learning model are shown below in descending order by high risk precision
+* The precision for each machine learning model are shown below in descending order by high risk precision:  
 | Rank | Machine Learning Model | Precision: Low Risk | Precision: High Risk |
 | ---- | ---------------------- | ----------------- | ------------------ |
 |1. | Easy Ensemble AdaBoost Classifier | 1.00 | 0.09 |
@@ -69,8 +69,7 @@ higher than the precision of the four previous models.
 * The precision for low risk was 1.00 for all six machine learning models, which indicates an extremely high reliability for low risk classification. 
 
 #### Recall
-* The recall for each machine learning model are shown below in descending order by low risk recall:
-
+* The recall for each machine learning model are shown below in descending order by low risk recall:  
 | Rank | Machine Learning Model | Recall: Low Risk | Recall: High Risk | Avg | 
 | ---- | ---------------------- | ---------------- | ----------------- | --- |
 |1. | Easy Ensemble AdaBoost Classifier | 0.94 | 0.92 | 0.92 |
