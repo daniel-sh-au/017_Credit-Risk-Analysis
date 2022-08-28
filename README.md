@@ -3,7 +3,7 @@
 ## Overview of the Analysis
 
 ### Purpose
-The purpose of this analysis was to evaluate the performance of machine learning models for predicting credit risk. The data was oversampled using the **RandomOverSampler** and **SMOTE**, as well as undersampled using the **ClusterCentroids** algorithms. Then, a combination approach of over- and under-sampling using the **SMOTEENN** algorithm was applied to the dataset. A LogisticRegression classifier was then applied for each of the previous sampling algorithms. Finally, two machine learning models, **BalancedRandomForestClassifier** and **EasyEnsembleClassifier** were applied to predict credit risk. 
+The purpose of this analysis was to evaluate the performance of machine learning models for predicting credit risk. The data was oversampled using the **RandomOverSampler** and **SMOTE**, as well as undersampled using the **ClusterCentroids** algorithms. Then, a combination approach of over- and under-sampling using the **SMOTEENN** algorithm was applied to the dataset. A LogisticRegression classifier was then applied for each of the previous sampling algorithms. Finally, two machine learning models, **BalancedRandomForestClassifier** and **EasyEnsembleClassifier**, were applied to predict credit risk. 
 
 ### Resources
 * Jupyter Notebook, Python 3.7.13
@@ -11,7 +11,7 @@ The purpose of this analysis was to evaluate the performance of machine learning
 * Data Sources: LoanStats_2019Q1.csv
 * Challenge Code: [credit_risk_resampling.ipynb](https://github.com/daniel-sh-au/UofT_DataBC_Module17_Credit_Risk_Analysis/blob/main/credit_risk_resampling.ipynb), [credit_risk_ensemble.ipynb](https://github.com/daniel-sh-au/UofT_DataBC_Module17_Credit_Risk_Analysis/blob/main/credit_risk_ensemble.ipynb)
 
-## Results: Screenshots
+## Results: Accuracy Score and Classification Report
 The balanced accuracy scores and classification reports for each machine learning model are shown below:
 
 ### Naive Random Oversampling
@@ -43,7 +43,7 @@ Balanced Accuracy Score: 0.9317
 * Recall = TP/(TP + FN)
 
 ### Balanced Accuracy Score
-* The balanced accuracy scores are listed below in descending order:  
+The balanced accuracy scores are listed below in descending order:  
 
 1. Easy Ensemble AdaBoost Classifier (0.9317)
 2. Balanced Random Forest Classifier (0.7885)
@@ -55,7 +55,7 @@ Balanced Accuracy Score: 0.9317
 * The Easy Ensemble AdaBoost Classifier had the highest accuracy score and the Cluster Centroids Undersampling algorithm had the lowest accuracy score.
 
 ### Precision
-* The precision for each machine learning model are shown below in descending order by high risk precision:
+The precision for each machine learning model are shown below in descending order by high risk precision:
 
 | Rank | Machine Learning Model | Precision: Low Risk | Precision: High Risk |
 | ---- | ---------------------- | ----------------- | ------------------ |
@@ -72,7 +72,7 @@ higher than the precision of the four previous models.
 * The precision for low risk was 1.00 for all six machine learning models, which indicates an extremely high reliability for low risk classification. 
 
 ### Recall
-* The recall for each machine learning model are shown below in descending order by low risk recall:
+The recall for each machine learning model are shown below in descending order by low risk recall:
 
 | Rank | Machine Learning Model | Recall: Low Risk | Recall: High Risk | Avg | 
 | ---- | ---------------------- | ---------------- | ----------------- | --- |
@@ -85,9 +85,7 @@ higher than the precision of the four previous models.
 
 * For low risk, the Easy Ensemble AdaBoost Classifier had the highest recall and the Cluster Centroids Undersampling algorithm had the lowest recall.
 * For high risk, the Easy Ensemble AdaBoost Classifier had the highest recall and the SMOTE Oversampling algorithm had the lowest recall. 
-* On average, the Easy Ensemble AdaBoost Classifier had the highest recall and the Cluster Centroids Undersampling algorithm had the loest recall. 
+* On average, the Easy Ensemble AdaBoost Classifier had the highest recall and the Cluster Centroids Undersampling algorithm had the lowest recall. 
 
 ## Summary
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
-
-From the six machine learning models, the Easy Ensemble AdaBoost Classifier had the highest accuracy score, the highest precision, and the highest recall. On the contrary, the Cluster Centroids Undersampling algorithm had the lowest accuracy score, the lowest precision, and the lowest recall. The model recommended for use is the Easy Ensemble AdaBoost Classifier model, which yielded the highest accuracy score from the six machine learning models and high precision/recall. A second recommendation would be the Balanced Random Forest Classifier model, which yeilded the second highest accuracy score and relatively high precision/recall when compared to the other four models. 
+From the six machine learning models, the Easy Ensemble AdaBoost Classifier had the highest accuracy score, the highest precision, and the highest recall. On the contrary, the Cluster Centroids Undersampling algorithm had the lowest accuracy score, the lowest precision, and the lowest recall. The model recommended for use is the Easy Ensemble AdaBoost Classifier model, which yielded the highest accuracy score from the six machine learning models and high precision/recall. A second recommendation would be the Balanced Random Forest Classifier model, which yielded the second highest accuracy score and relatively high precision/recall when compared to the other four models. 
