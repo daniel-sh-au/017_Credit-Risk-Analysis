@@ -43,14 +43,16 @@ Balanced Accuracy Score: 0.9317
 * Recall = TP/(TP + FN)
 
 ### Balanced Accuracy Score
-The balanced accuracy scores are listed below in descending order:  
+The balanced accuracy scores are shown below in descending order:  
 
-1. Easy Ensemble AdaBoost Classifier (0.9317)
-2. Balanced Random Forest Classifier (0.7885)
-3. SMOTEENN Combination Sampling (0.6585)
-4. Naive Random Oversampling (0.6573)
-5. SMOTE Oversampling (0.6259)
-6. Cluster Centroids Undersampling (0.5318)
+| Rank | Machine Learning Model | Accuracy |
+| ---- | ---------------------- | -------- |
+| 1. | Easy Ensemble AdaBoost Classifier | 0.9317 |
+| 2. | Balanced Random Forest Classifier | 0.7885 |
+| 3. | SMOTEENN Combination Sampling | 0.6585 |
+| 4. | Naive Random Oversampling | 0.6573 |
+| 5. | SMOTE Oversampling | 0.6259 |
+| 6. | Cluster Centroids Undersampling | 0.5318 |
 
 * The Easy Ensemble AdaBoost Classifier had the highest accuracy score and the Cluster Centroids Undersampling algorithm had the lowest accuracy score.
 
